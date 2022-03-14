@@ -1,0 +1,53 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "type" : "object",
+  "properties" : {
+    "createType" : {
+      "type" : "string",
+      "enum" : [ "BLOG_POST", "WIKI_PAGE" ],
+      "$fqcn" : "com.myapp.contracts.PageType",
+      "$passedToCustomDef" : true,
+      "$passedToCustomPropDef" : true
+    },
+    "pagePayload" : {
+      "anyOf" : [ {
+        "type" : "object",
+        "properties" : {
+          "content" : {
+            "type" : "string",
+            "$fqcn" : "java.lang.String",
+            "$passedToCustomDef" : true,
+            "$passedToCustomPropDef" : true
+          }
+        },
+        "required" : [ "content" ],
+        "$fqcn" : "com.myapp.contracts.BlogPost",
+        "$passedToCustomDef" : true,
+        "$passedToCustomPropDef" : true
+      }, {
+        "type" : "object",
+        "properties" : {
+          "bbcode" : {
+            "type" : "string",
+            "$fqcn" : "java.lang.String",
+            "$passedToCustomDef" : true,
+            "$passedToCustomPropDef" : true
+          }
+        },
+        "required" : [ "bbcode" ],
+        "$fqcn" : "com.myapp.contracts.WikiPage",
+        "$passedToCustomDef" : true,
+        "$passedToCustomPropDef" : true
+      } ]
+    },
+    "userId" : {
+      "type" : "string",
+      "$fqcn" : "java.lang.String",
+      "$passedToCustomDef" : true,
+      "$passedToCustomPropDef" : true
+    }
+  },
+  "required" : [ "createType", "pagePayload", "userId" ],
+  "$fqcn" : "com.myapp.contracts.CreatePage",
+  "$passedToCustomDef" : true
+}

@@ -1,0 +1,15 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "type" : "object",
+  "properties" : {
+    "content" : {
+      "type" : "string",
+      "$fqcn" : "java.lang.String",
+      "$passedToCustomDef" : true,
+      "$passedToCustomPropDef" : true
+    }
+  },
+  "required" : [ "content" ],
+  "$fqcn" : "com.myapp.contracts.BlogPost",
+  "$passedToCustomDef" : true
+}
