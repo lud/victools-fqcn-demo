@@ -4,12 +4,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
-public class CreatePage {
+public class CreatePage extends AbstractContract {
   @JsonProperty(required = true)
-  String userId;
+  public String userId;
 
   @JsonProperty(required = true)
-  PageType createType;
+  public PageType createType;
 
   @JsonProperty(required = true)
   @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "createType", include = JsonTypeInfo.As.EXTERNAL_PROPERTY)
@@ -17,5 +17,5 @@ public class CreatePage {
       @JsonSubTypes.Type(value = BlogPost.class, name = "BLOG_POST"),
       @JsonSubTypes.Type(value = WikiPage.class, name = "WIKI_PAGE"),
   })
-  IPage pagePayload;
+  public IPage pagePayload;
 }

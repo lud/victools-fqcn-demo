@@ -7,47 +7,31 @@
         "type" : "object",
         "properties" : {
           "content" : {
-            "type" : "string",
-            "$fqcn" : "java.lang.String",
-            "$passedToCustomDef" : true,
-            "$passedToCustomPropDef" : true
+            "type" : "string"
           }
         },
         "required" : [ "content" ],
-        "$fqcn" : "com.myapp.contracts.BlogPost",
-        "$passedToCustomDef" : true,
-        "$passedToCustomPropDef" : true
+        "$fqcn" : "com.myapp.contracts.BlogPost"
       }, {
         "type" : "object",
         "properties" : {
           "bbcode" : {
-            "type" : "string",
-            "$fqcn" : "java.lang.String",
-            "$passedToCustomDef" : true,
-            "$passedToCustomPropDef" : true
+            "type" : "string"
           }
         },
         "required" : [ "bbcode" ],
-        "$fqcn" : "com.myapp.contracts.WikiPage",
-        "$passedToCustomDef" : true,
-        "$passedToCustomPropDef" : true
+        "$fqcn" : "com.myapp.contracts.WikiPage"
       } ]
     },
     "updateType" : {
       "type" : "string",
       "enum" : [ "BLOG_POST", "WIKI_PAGE" ],
-      "$fqcn" : "com.myapp.contracts.PageType",
-      "$passedToCustomDef" : true,
-      "$passedToCustomPropDef" : true
+      "$fqcn" : "com.myapp.contracts.PageType"
     },
     "userId" : {
-      "type" : "string",
-      "$fqcn" : "java.lang.String",
-      "$passedToCustomDef" : true,
-      "$passedToCustomPropDef" : true
+      "type" : "string"
     }
   },
   "required" : [ "pagePayload", "updateType", "userId" ],
-  "$fqcn" : "com.myapp.contracts.UpdatePage",
-  "$passedToCustomDef" : true
+  "$fqcn" : "com.myapp.contracts.UpdatePage"
 }

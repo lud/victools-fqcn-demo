@@ -1,0 +1,14 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "type" : "object",
+  "properties" : {
+    "discr" : {
+      "type" : "string"
+    },
+    "mapping" : {
+      "type" : "object",
+      "$fqcn" : "java.util.Map"
+    }
+  },
+  "$fqcn" : "com.myapp.contracts.serialization.FqcnModule$MappingSpec"
+}

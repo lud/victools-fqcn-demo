@@ -3,13 +3,9 @@
   "type" : "object",
   "properties" : {
     "bbcode" : {
-      "type" : "string",
-      "$fqcn" : "java.lang.String",
-      "$passedToCustomDef" : true,
-      "$passedToCustomPropDef" : true
+      "type" : "string"
     }
   },
   "required" : [ "bbcode" ],
-  "$fqcn" : "com.myapp.contracts.WikiPage",
-  "$passedToCustomDef" : true
+  "$fqcn" : "com.myapp.contracts.WikiPage"
 }

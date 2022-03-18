@@ -7,6 +7,9 @@
       "enum" : [ "BLOG_POST", "WIKI_PAGE" ],
       "$fqcn" : "com.myapp.contracts.PageType"
     },
+    "isWrapper" : {
+      "type" : "boolean"
+    },
     "metadata" : {
       "type" : "object",
       "properties" : {
@@ -49,6 +52,6 @@
       "type" : "string"
     }
   },
-  "required" : [ "createType", "metadata", "pagePayload", "userId" ],
-  "$fqcn" : "com.myapp.contracts.CreatePage"
+  "required" : [ "createType", "isWrapper", "metadata", "pagePayload", "userId" ],
+  "$fqcn" : "com.myapp.contracts.CreatePageWrapper"
 }
